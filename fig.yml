@@ -1,0 +1,5 @@
+web:
+  image: jmvrbanac/hastebin
+  ports:
+    - "9090:7777"
+
