@@ -1,0 +1,110 @@
+/*
+
+Orginal Style from http://chriskempson.github.io/base16/#mocha (c) Chris Kempson <http://chriskempson.com/>
+
+*/
+
+pre code {
+  display: block; padding: 0.5em;
+  background: #3B3228; color: #f5eeeb;
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .doctype,
+pre .lisp .string,
+pre .javadoc {
+  color: #534636;
+  font-style: italic;
+  display: inline-block;
+  line-height: 1em;
+}
+
+pre .keyword,
+pre .css .rule .keyword {
+    color: #cb6077;
+}
+
+
+pre .winutils,
+pre .javascript .title,
+pre .method,
+pre .addition,
+pre .css .tag,
+pre .lisp .title {
+  color: #7bbda4;
+}
+
+pre .string {
+  color: #beb55b;
+}
+
+pre .regexp {
+  color:#7bbda4;
+}
+
+pre .number,
+pre .command,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula,
+pre .hexcolor {
+  color: #8ab3b5;
+}
+
+pre .title,
+pre .localvars,
+pre .function .title,
+pre .chunk,
+pre .decorator,
+pre .builtin,
+pre .built_in,
+pre .lisp .title,
+pre .identifier,
+pre .title .keymethods,
+pre .id,
+pre .header {
+  color: #e9e1dd;
+}
+
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  font-weight: bold;
+}
+
+pre .attribute,
+pre .variable,
+pre .instancevar,
+pre .lisp .body,
+pre .smalltalk .number,
+pre .constant,
+pre .class .title,
+pre .parent,
+pre .haskell .label {
+  color: #f4bc87;
+}
+
+pre .preprocessor,
+pre .pi,
+pre .shebang,
+pre .symbol,
+pre .diff .change,
+pre .special,
+pre .keymethods,
+pre .attr_selector,
+pre .important,
+pre .subst,
+pre .cdata {
+  color: #bb9584;
+}
+
+pre .deletion {
+  color: #a89bb9;
+}
+
+pre .tex .formula,
+pre .code {
+  background: #073642;
+}
