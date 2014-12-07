@@ -1,4 +1,4 @@
-FROM dockerfile/nodej
+FROM dockerfile/nodejs
 MAINTAINER Alejandro Baez <Alejan.Baez@gmail.com>
 
 RUN git clone https://github.com/seejohnrun/haste-server.git /opt/haste

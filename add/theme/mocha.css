@@ -15,18 +15,20 @@ pre .diff .header,
 pre .doctype,
 pre .lisp .string,
 pre .javadoc {
-  color: #534636;
+  color: #7e705a;
   font-style: italic;
   display: inline-block;
   line-height: 1em;
 }
 
+pre .command,
 pre .keyword,
 pre .css .rule .keyword {
-    color: #cb6077;
+  color: #a89bb9;
 }
 
 
+pre .keymethods,
 pre .winutils,
 pre .javascript .title,
 pre .method,
@@ -45,7 +47,6 @@ pre .regexp {
 }
 
 pre .number,
-pre .command,
 pre .tag .value,
 pre .phpdoc,
 pre .tex .formula,
@@ -65,7 +66,7 @@ pre .identifier,
 pre .title .keymethods,
 pre .id,
 pre .header {
-  color: #e9e1dd;
+  color: #cb6077;
 }
 
 pre .tag .title,
@@ -92,7 +93,6 @@ pre .shebang,
 pre .symbol,
 pre .diff .change,
 pre .special,
-pre .keymethods,
 pre .attr_selector,
 pre .important,
 pre .subst,
