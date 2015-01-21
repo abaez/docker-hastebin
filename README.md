@@ -10,6 +10,7 @@ and uses [Solarized Light](http://ethanschoonover.com/solarized) for the theme.
 
 ### USAGE
 Simply clone the repository and run by using the contained `fig.yml` file.
+
     hg clone <docker-lapis source> docker-lapis
     cd docker-lapis
     fig up
