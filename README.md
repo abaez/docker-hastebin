@@ -9,11 +9,15 @@ of the original hastebin server. Has both an updated version of [highlight.js](h
 and uses [Solarized Light](http://ethanschoonover.com/solarized) for the theme.
 
 ### USAGE
-Simply clone the repository and run by using the contained `fig.yml` file.
+If using from source, simply clone the repository and run by using the
+contained `fig.yml` file.
 
-    hg clone <docker-lapis source> docker-lapis
+    hg clone <abaez/docker-lapis source> docker-lapis
     cd docker-lapis
     fig up
+If using the docker container directly, then you can use the docker build.
+
+    docker run -p 7777:7777 abaez/docker-lapis
 
 ### LICENSE
 The MIT License (MIT)
