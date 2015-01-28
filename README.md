@@ -12,12 +12,12 @@ and uses [Solarized Light](http://ethanschoonover.com/solarized) for the theme.
 If using from source, simply clone the repository and run by using the
 contained `fig.yml` file.
 
-    hg clone <abaez/docker-lapis source> docker-lapis
-    cd docker-lapis
+    hg clone <abaez/docker-hastebin source> docker-hastebin
+    cd docker-hastebin
     fig up
 If using the docker container directly, then you can use the docker build.
 
-    docker run -p 7777:7777 abaez/docker-lapis
+    docker run -p 7777:7777 abaez/docker-hastebin
 
 ### LICENSE
 The MIT License (MIT)
