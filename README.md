@@ -10,11 +10,11 @@ and uses [Solarized Light](http://ethanschoonover.com/solarized) for the theme.
 
 ### USAGE
 If using from source, simply clone the repository and run by using the
-contained `fig.yml` file.
+contained `docker-compose.yml` file.
 
     hg clone <abaez/docker-hastebin source> docker-hastebin
     cd docker-hastebin
-    fig up
+    docker-compose up
 If using the docker container directly, then you can use the docker build.
 
     docker run -p 7777:7777 abaez/docker-hastebin
