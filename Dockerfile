@@ -1,11 +1,11 @@
-FROM dockerfile/nodejs
-MAINTAINER Alejandro Baez <Alejan.Baez@gmail.com>
+FROM node
+MAINTAINER [Alejandro Baez](https://twitter.com/a_baez)
 
-RUN git clone https://github.com/seejohnrun/haste-server.git /opt/haste
+RUN git clone -b custom https://github.com/abaez/haste-server.git /opt/haste
 
-# Adding customization theme setup to haste
-ADD add/theme/ /opt/haste/static/
 ADD add/config.js /opt/haste/
+#ADD add/index.html /opt/haste/static/
+ADD add/highlight.min.js /opt/haste/static/
 WORKDIR /opt/haste
 
 RUN npm install
