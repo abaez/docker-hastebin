@@ -1,0 +1,17 @@
+[Unit]
+Description=haste server container
+Documentation=https://github.com/abaez/haste-server/tree/custom
+Requires=docker.service
+After=docker.service
+
+[Service]
+User=%u
+Restart=on-failure
+RestartSec=10
+ExecStartPre=-/usr/bin/docker kill haste
+ExecStartPre=-/usr/bin/docker rm haste
+ExecStart=/usr/bin/docker run -p "%i:7777" --name=haste abaez/hastebin
+ExecStop=-/usr/bin/docker stop -t 2 haste
+
+[Install]
+WantedBy=multi-user.target
