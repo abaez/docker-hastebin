@@ -12,21 +12,28 @@ and uses [Solarized Light](http://ethanschoonover.com/solarized) for the theme.
 If using from source, simply clone the repository and run by using the
 contained `docker-compose.yml` file.
 
-    git clone https://github.com/abaez/docker-hastebin.git docker-hastebin
-    cd docker-hastebin
-    docker-compose up
+```
+git clone https://github.com/abaez/docker-hastebin.git docker-hastebin
+cd docker-hastebin
+docker-compose up
+```
 If using the docker container directly, then you can use the docker build.
 
-    docker run -p 7777:7777 abaez/docker-hastebin
+```
+docker run -p 7777:7777 abaez/docker-hastebin
+```
 If you want to use as a systemd service, then link the docker-hastebin@.service
 file to your multi-user path with the port you want like so:
 
-  ln -s <docker-hastebin source>/docker-hastebin@.service \
-  /etc/systemd/system/multi-user.target.wants/docker-hastebin@<port you want>.service
+```
+ln -s <docker-hastebin source>/docker-hastebin@.service \
+/etc/systemd/system/multi-user.target.wants/docker-hastebin@<port you want>.service
+```
 Then simply start the service:
 
-  sudo systemctl start docker-hastebin@<port you want>
-
+```
+sudo systemctl start docker-hastebin@<port you want>
+```
 ### LICENSE
 The MIT License (MIT)
 
