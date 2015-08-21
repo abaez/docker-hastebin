@@ -22,18 +22,32 @@ If using the docker container directly, then you can use the docker build.
 ```
 docker run -p 7777:7777 abaez/docker-hastebin
 ```
-If you want to use as a systemd service, then link the docker-hastebin@.service
-file to your multi-user path with the port you want like so:
+
+If you want to have the docker container running automagically on your
+machine, then this is the place to go.
+
+All you need to do is first copy to your systemd service directory and do a
+quick `daemon-reload`.
 
 ```
-ln -s <docker-hastebin source>/docker-hastebin@.service \
-/etc/systemd/system/multi-user.target.wants/docker-hastebin@<port you want>.service
+sudo cp <docker-shout source>/docker-shout@.service /usr/lib/systemd/system
+sudo systemctl daemon-reload
 ```
-Then simply start the service:
+
+Finally, you can append to your systemd setup by giving the port you
+desire for the service to run under.
 
 ```
-sudo systemctl start docker-hastebin@<port you want>
+sudo systemctl enable docker-shout@9000
 ```
+
+You don't need to declare the user, since it uses the default user of the
+running service. However, if you want to be specific, you can always change
+the user by replacing `%u`, on line 8 with your user, in the unit file.
+
+Lastly, unless you want the volume configuration auto mounted to `/etc/shout`,
+change the volume location to whatever desire.
+
 ### LICENSE
 The MIT License (MIT)
 
